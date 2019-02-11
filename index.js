@@ -18,6 +18,7 @@ let reverseStringSplit = (str) => {
 
 reverseStringSplit("bye");
 
+// reverse string with for loop
 let reverseStringForLoop = (str) => {
   let newStr = '';
   for( let i = str.length - 1; i >= 0; i --) {
@@ -28,6 +29,7 @@ let reverseStringForLoop = (str) => {
 
 reverseStringForLoop('!oG')
 
+// reverse string with for... of loop
 let reverseStringForOfLoop = (str) => {
   let newStr = '';
   for( let letter of str) {
@@ -36,4 +38,11 @@ let reverseStringForOfLoop = (str) => {
   console.log(newStr)
 }
 
-reverseStringForOfLoop('!dooG')
+reverseStringForOfLoop('!emosewA')
+// reverse string
+let reverseStringWReduce = (str) => {
+  let newString = [...str].reduce((acc, word) => word + acc)
+  console.log(newString)
+}
+
+reverseStringWReduce('!dooG')
