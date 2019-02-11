@@ -27,3 +27,13 @@ let reverseStringForLoop = (str) => {
 }
 
 reverseStringForLoop('!oG')
+
+let reverseStringForOfLoop = (str) => {
+  let newStr = '';
+  for( let letter of str) {
+    newStr = letter + newStr
+  }
+  console.log(newStr)
+}
+
+reverseStringForOfLoop('!dooG')
